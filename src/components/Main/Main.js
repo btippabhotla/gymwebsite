@@ -4,7 +4,7 @@ import Overlay from "../GlobalComponents/Overlay";
 import Nav from "./Navbar/Nav";
 import Container from "../GlobalComponents/Container";
 import MainInfo from "./MainInfo";
-import mainBgOne from "../Images/mainBgOne.png";
+import mainBgOne from "../Images/mainBackground.jpg";
 
 const Main = () => (
   <section css={styles} className="main" id="home">
