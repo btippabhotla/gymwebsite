@@ -6,7 +6,7 @@ const TrainerCard = ({ trainerName, trainerGender, trainerImg }) => (
   <div css={styles} className="trainerCard">
     <div className="trainerImg">
       <TrainerCardOverlay />
-      <img src={trainerImg} alt="trainer" />
+      <img src={trainerImg} alt="trainer" height="450" />
     </div>
     <h2>{trainerName}</h2>
     <p>{trainerGender}</p>
@@ -34,6 +34,10 @@ const styles = css`
   p {
     font-size: 16px;
     margin: 16px 0 0 0;
+  }
+  img {
+   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
   }
   @media (max-width: 769px) {
     width: 100%;

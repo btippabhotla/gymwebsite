@@ -2,14 +2,13 @@
 import { jsx, css } from "@emotion/core";
 import Button from "../GlobalComponents/Button";
 
-const JoinUsInfo = ({ title }) => (
+const JoinUsInfo = ({ title, description }) => (
   <div css={styles} className="cardInfo">
     <h2>{title}</h2>
     <p>
-      There are many variations of passages of lorem Ipsum available, but the
-      majority have suffered alteration.
+      {description}
     </p>
-    <Button text="JOIN NOW" />
+    {/* <Button text="JOIN NOW" /> */}
   </div>
 );
 

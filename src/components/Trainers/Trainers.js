@@ -1,38 +1,29 @@
 /** @jsx jsx */
+/** @jsxImportSource @emotion/react */
 import { jsx, css } from "@emotion/core";
 import Container from "../GlobalComponents/Container";
 import Title from "../GlobalComponents/Title";
 import ImgOverlay from "../GlobalComponents/ImgOverlay";
-import MainBgOne from "../Images/mainBgOne.png";
+import MainBgOne from "../Images/secondBackground.jpg";
 import TrainerCard from "./TrainerCard";
-import TeamOneBg from "../Images/teamOne.png";
-import TeamTwoBg from "../Images/teamTwo.png";
-import TeamThreeBg from "../Images/teamThree.png";
+import TeamOneBg from "../Images/aboutMe.jpg";
 
 const Trainers = () => (
   <section css={styles} className="trainers" id="pages">
     <ImgOverlay />
-    <Title
+    {/* <Title
       title="OUR TRAINERS"
       desc="There are many variations of passages of lorem Ipsum available, but the majority
         have suffered alteration."
-    />
+    /> */}
     <Container>
+      <Title title="About Me" desc="A small hand full of years ago, I was in a place where a number of you may be in right now. I had found myself points away from being pre-diabetic and was nearly 200Lb at my heaviest. Barely into my mid-twenties, I knew I had to make a change. I had my whole life ahead of me! One day I stepped into the gym, no idea where to begin and quickly fell in love. My metamorphosis began in 2021. Shortly after, I knew with every fiber of my being I was meant to help others with their own! Let's get to work!" />
       <TrainerCard
-        trainerName="Jessica Mino"
-        trainerGender="Woman Trainer"
+        trainerName="Haylea Brown"
+        trainerGender="Personal trainer"
         trainerImg={TeamOneBg}
       />
-      <TrainerCard
-        trainerName="Amit Khan"
-        trainerGender="Men Trainer"
-        trainerImg={TeamTwoBg}
-      />
-      <TrainerCard
-        trainerName="Paulo Rolac"
-        trainerGender="Men Trainer"
-        trainerImg={TeamThreeBg}
-      />
+     
     </Container>
   </section>
 );

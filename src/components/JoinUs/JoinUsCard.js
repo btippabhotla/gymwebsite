@@ -3,10 +3,10 @@ import { jsx, css } from "@emotion/core";
 import ImgOverlay from "../GlobalComponents/ImgOverlay";
 import JoinUsInfo from "./JoinUsInfo";
 
-const JoinUsCard = ({ title }) => (
+const JoinUsCard = ({ title, description }) => (
   <div css={styles} className="card">
     <ImgOverlay />
-    <JoinUsInfo title={title} />
+    <JoinUsInfo title={title} description={description}/>
   </div>
 );
 

@@ -8,7 +8,7 @@ const FooterCardContainer = () => (
       <h2>Personal training by Halyea</h2>
       <p>6080 Water Street, Plano, TX - 75024.</p>
       <a href="#/">(214) 407-4724</a>
-      <a href="#/">Yahoo@gmail.com</a>
+      <a href="#/">getfitwithhaylea@gmail.com</a>
       <div className="footerSocials">
         <i className="fab fa-facebook-f"></i>
         <i className="fab fa-twitter"></i>

@@ -4,16 +4,16 @@ import Button from "../GlobalComponents/Button";
 
 const MainInfo = () => (
   <div css={styles} className="mainInfo">
-    <h3>Build Up Your</h3>
-    <h1>Body Shape</h1>
-    <p>Build Your Body and Fitness with Professional Touch</p>
-    <Button text="JOIN US" />
+    <h2>Your metamorphosis starts here</h2>
+    <p>Change your life one rep at a time.</p>
+    {/* <p>Build Your Body and Fitness with Professional Touch</p> */}
+    {/* <Button text="JOIN US" /> */}
   </div>
 );
 
 const styles = css`
-  h3 {
-    font-size: 43px;
+  h2 {
+    font-size: 6rem;
     font-weight: 800;
     line-height: 1;
     text-transform: uppercase;

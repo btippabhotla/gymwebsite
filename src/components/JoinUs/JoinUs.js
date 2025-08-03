@@ -2,17 +2,22 @@
 import { jsx, css } from "@emotion/core";
 import Container from "../GlobalComponents/Container";
 import JoinUsCard from "./JoinUsCard";
-import ForGirlBg from "../Images/forGirl.png";
-import ForBoysBg from "../Images/forBoys.png";
+import ForGirlBg from "../Images/forGirl.jpg";
+import ForBoysBg from "../Images/healthyMeals.jpg";
 
-const JoinUs = () => (
-  <section css={styles} className="joinUs" id="blog">
-    <Container>
-      <JoinUsCard title="FOR GIRL" />
-      <JoinUsCard title="FOR BOYS" />
-    </Container>
-  </section>
-);
+const JoinUs = () => {
+  const personalizedDescription = 'Professional guidance to help you achieve your fitness goals with tailored workouts for women of all ages.';
+  const nutritionalDescription = 'Expert advice on nutrition plans designed to complement your fitness routine and promote overall well-being.';
+  
+  return (
+    <section css={styles} className="joinUs" id="blog">
+      <Container>
+        <JoinUsCard title="Personalized programs" description={personalizedDescription}/>
+        <JoinUsCard title="Nutritional guidance" description={nutritionalDescription}/>
+      </Container>
+    </section>
+  );
+};
 
 const styles = css`
   width: 100%;
