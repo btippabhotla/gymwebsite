@@ -1,11 +1,12 @@
 /** @jsx jsx */
+/** @jsxImportSource @emotion/react */
 import { jsx, css } from "@emotion/core";
 
-const FeaturesCard = ({ cardImg, cardTitle }) => (
+const FeaturesCard = ({ cardImg, cardTitle, cardDescription }) => (
   <div css={styles} className="featuresCard">
     <img src={cardImg} alt="icon" />
     <h3>{cardTitle}</h3>
-    <p>There are many variations of passages of lorem Ipsum available.</p>
+    <p>{cardDescription}</p>
   </div>
 );
 

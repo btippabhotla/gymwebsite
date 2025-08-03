@@ -1,4 +1,5 @@
 /** @jsx jsx */
+/** @jsxImportSource @emotion/react */
 import { jsx, css } from "@emotion/core";
 import Container from "../GlobalComponents/Container";
 import Title from "../GlobalComponents/Title";
@@ -8,18 +9,24 @@ import IconTwo from "../Images/iconTwo.svg";
 import IconThree from "../Images/iconThree.svg";
 import IconFour from "../Images/iconFour.svg";
 
+const cardsData = [
+  { cardImg: IconOne, cardTitle: "Build strength", cardDescription: "The strength you build in the gym will begin to reflect in everyday life!" },
+  { cardImg: IconTwo, cardTitle: "Build discipline", cardDescription: "Discipline is the bridge between goals and accomplishment." },
+  { cardImg: IconThree, cardTitle: "Build confidence", cardDescription: "Confidence comes not from always being right but from not fearing to be wrong." },
+  { cardImg: IconFour, cardTitle: "Build a new you", cardDescription: "You'll be amazed at how much transformation 1 year can bring! All it takes is that first step!" },
+];
+
 const Features = () => (
   <section css={styles} className="features" id="about">
     <Title
-      title="OUR FEATURES"
-      desc="There are many variations of passages of lorem Ipsum available, but the majority
-        have suffered alteration."
+      title="With me, you will..."
+      // desc="There are many variations of passages of lorem Ipsum available, but the majority
+      //   have suffered alteration."
     />
     <Container>
-      <FeaturesCard cardImg={IconOne} cardTitle="Weightlifting" />
-      <FeaturesCard cardImg={IconTwo} cardTitle="Specific Muscles" />
-      <FeaturesCard cardImg={IconThree} cardTitle="Flex Your Muscles" />
-      <FeaturesCard cardImg={IconFour} cardTitle="Cardio Exercises" />
+      {cardsData.map((card, idx) => (
+        <FeaturesCard key={idx} cardImg={card.cardImg} cardTitle={card.cardTitle} cardDescription={card.cardDescription} />
+      ))}
     </Container>
   </section>
 );
