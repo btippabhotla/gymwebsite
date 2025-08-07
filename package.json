@@ -2,7 +2,7 @@
   "name": "react-gym-template",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://btippabhotla.github.io/gymwebsite",
+  "homepage": "https://btippabhotla.github.io",
   "dependencies": {
     "@emotion/core": "^10.0.28",
     "@testing-library/jest-dom": "^4.2.4",

@@ -17,9 +17,9 @@ const App = () => {
       <Main />
       <JoinUs />
       <Features />
-      <BigOffer />
+      {/* <BigOffer /> */}
       {/* <Pricing /> */}
-      <Slideshow />
+      {/* <Slideshow /> */}
       {/* <Gallery /> */}
       <Trainers />
       {/* <BannerOffer /> */}
