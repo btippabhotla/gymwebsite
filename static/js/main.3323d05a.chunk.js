@@ -9,11 +9,11 @@
     rgba(181, 8, 8, 0.38) 0%,
     rgba(0, 0, 0, 0.6) 100%
   );
-`;var s=()=>Object(c.b)("div",{css:l,className:"overlay"});const d=c.a`
+`;var d=()=>Object(c.b)("div",{css:l,className:"overlay"});const s=c.a`
   width: 100%;
   max-width: 1140px;
   margin: 0 auto;
-`;var p=e=>{let{children:t}=e;return Object(c.b)("div",{css:d,className:"container"},t)},m=a(4),b=a.n(m);var h=()=>n.a.createElement("img",{className:"logo",src:b.a,alt:"logo",height:"120",style:{borderRadius:"2.5rem"}});const x=c.a`
+`;var p=e=>{let{children:t}=e;return Object(c.b)("div",{css:s,className:"container"},t)},m=a(4),b=a.n(m);var h=()=>n.a.createElement("img",{className:"logo",src:b.a,alt:"logo",height:"120",style:{borderRadius:"2.5rem"}});const x=c.a`
   a {
     text-decoration: none;
     text-transform: uppercase;
@@ -113,7 +113,7 @@
       }
     }
   }
-`;var y=()=>{const[e,t]=Object(i.useState)(!1);return Object(c.b)("nav",{css:w},Object(c.b)(p,null,Object(c.b)(h,null),Object(c.b)(f,{openMenu:e}),Object(c.b)("i",{onClick:()=>t(!e),id:"burgerMenu",className:e?"fas fa-times fa-lg":"fas fa-align-right fa-lg"})))};const j=c.a`
+`;var y=()=>{const[e,t]=Object(i.useState)(!1);return Object(c.b)("nav",{css:w},Object(c.b)(p,null,Object(c.b)(h,null),Object(c.b)(f,{openMenu:e}),Object(c.b)("i",{onClick:()=>t(!e),id:"burgerMenu",className:e?"fas fa-times fa-lg":"fas fa-align-right fa-lg"})))};const v=c.a`
   h2 {
     font-size: 6rem;
     font-weight: 800;
@@ -152,7 +152,7 @@
       font-size: 80px;
     }
   }
-`;var v=()=>Object(c.b)("div",{css:j,className:"mainInfo"},Object(c.b)("h2",null,"Your metamorphosis starts here"),Object(c.b)("p",null,"Change your life one rep at a time.")),O=a(5),k=a.n(O);const z=c.a`
+`;var j=()=>Object(c.b)("div",{css:v,className:"mainInfo"},Object(c.b)("h2",null,"Your metamorphosis starts here"),Object(c.b)("p",null,"Change your life one rep at a time.")),O=a(5),k=a.n(O);const z=c.a`
   width: 100%;
   min-height: 96vh;
   background: url('${k.a}') no-repeat center/cover;
@@ -169,7 +169,7 @@
       max-width: 90%;
     }
   }
-`;var N=()=>Object(c.b)("section",{css:z,className:"main",id:"home"},Object(c.b)(s,null),Object(c.b)(y,null),Object(c.b)(p,null,Object(c.b)(v,null)));const I=c.a`
+`;var N=()=>Object(c.b)("section",{css:z,className:"main",id:"home"},Object(c.b)(d,null),Object(c.b)(y,null),Object(c.b)(p,null,Object(c.b)(j,null)));const I=c.a`
   position: absolute;
   top: 0;
   right: 0;
@@ -177,7 +177,7 @@
   left: 0;
   background: #000;
   opacity: 0.7;
-`;var E=()=>Object(c.b)("div",{css:I,className:"imgOverlay"});const T=c.a`
+`;var T=()=>Object(c.b)("div",{css:I,className:"imgOverlay"});const C=c.a`
   z-index: 3;
   color: #fff;
   position: relative;
@@ -203,7 +203,7 @@
       border: 1px solid #ff1414;
     }
   }
-`;var C=e=>{let{title:t,description:a}=e;return Object(c.b)("div",{css:T,className:"cardInfo"},Object(c.b)("h2",null,t),Object(c.b)("p",null,a))};const B=c.a`
+`;var B=e=>{let{title:t,description:a}=e;return Object(c.b)("div",{css:C,className:"cardInfo"},Object(c.b)("h2",null,t),Object(c.b)("p",null,a))};const E=c.a`
   width: 100%;
   max-width: 50%;
   padding: 200px 0;
@@ -215,20 +215,20 @@
   @media(max-width: 1000px) {
     max-width: 100%;
   }
-`;var M=e=>{let{title:t,description:a}=e;return Object(c.b)("div",{css:B,className:"card"},Object(c.b)(E,null),Object(c.b)(C,{title:t,description:a}))},S=a(6),A=a.n(S),D=a(7),F=a.n(D);const W=c.a`
+`;var M=e=>{let{title:t,description:a}=e;return Object(c.b)("div",{css:E,className:"card"},Object(c.b)(T,null),Object(c.b)(B,{title:t,description:a}))},S=a(6),D=a.n(S),$=a(7),A=a.n($);const W=c.a`
   width: 100%;
   .container {
     max-width: 100%;
     display: flex;
     .card {
-      background: url('${A.a}') no-repeat center/cover;
+      background: url('${D.a}') no-repeat center/cover;
       background-size: 100% 100%;
       transition: all 300ms ease-in-out;
       &:hover {
         background-size: 105% 105%;
       }
       &:last-of-type {
-        background: url('${F.a}') no-repeat center/cover;
+        background: url('${A.a}') no-repeat center/cover;
         background-size: 100% 100%;
         &:hover{
             background-size: 105% 105%;
@@ -242,7 +242,7 @@
       align-items: center;
     }
   }
-`;var $=()=>Object(c.b)("section",{css:W,className:"joinUs",id:"blog"},Object(c.b)(p,null,Object(c.b)(M,{title:"Personalized programs",description:"Professional guidance to help you achieve your fitness goals with tailored workouts for women of all ages."}),Object(c.b)(M,{title:"Nutritional guidance",description:"Expert advice on nutrition plans designed to complement your fitness routine and promote overall well-being."})));const R=c.a`
+`;var F=()=>Object(c.b)("section",{css:W,className:"joinUs",id:"blog"},Object(c.b)(p,null,Object(c.b)(M,{title:"Personalized programs",description:"Professional guidance to help you achieve your fitness goals with tailored workouts for women of all ages."}),Object(c.b)(M,{title:"Nutritional guidance",description:"Expert advice on nutrition plans designed to complement your fitness routine and promote overall well-being."})));const G=c.a`
   text-align: center;
   width: 100%;
   max-width: 600px;
@@ -258,7 +258,7 @@
     line-height: 1.5;
     margin: 10px 0 0 0;
   }
-`;var G=e=>{let{title:t,desc:a}=e;return Object(c.b)("div",{css:R,className:"title"},Object(c.b)("h2",null,t),Object(c.b)("p",null,a))};const H=c.a`
+`;var L=e=>{let{title:t,desc:a}=e;return Object(c.b)("div",{css:G,className:"title"},Object(c.b)("h2",null,t),Object(c.b)("p",null,a))};const P=c.a`
   width: 100%;
   max-width: 25%;
   color: #fff;
@@ -285,7 +285,7 @@
     max-width: 47%;
     margin-bottom: 50px;
   }
-`;var L=e=>{let{cardImg:t,cardTitle:a,cardDescription:i}=e;return Object(c.b)("div",{css:H,className:"featuresCard"},Object(c.b)("img",{src:t,alt:"icon"}),Object(c.b)("h3",null,a),Object(c.b)("p",null,i))},P=a(8),J=a.n(P),U=a(9),Y=a.n(U),q=a(10),K=a.n(q),Q=a(11),V=a.n(Q);const X=[{cardImg:J.a,cardTitle:"Build strength",cardDescription:"The strength you build in the gym will begin to reflect in everyday life!"},{cardImg:Y.a,cardTitle:"Build discipline",cardDescription:"Discipline is the bridge between goals and accomplishment."},{cardImg:K.a,cardTitle:"Build confidence",cardDescription:"Confidence comes not from always being right but from not fearing to be wrong."},{cardImg:V.a,cardTitle:"Build a new you",cardDescription:"You'll be amazed at how much transformation 1 year can bring! All it takes is that first step!"}],Z=c.a`
+`;var H=e=>{let{cardImg:t,cardTitle:a,cardDescription:i}=e;return Object(c.b)("div",{css:P,className:"featuresCard"},Object(c.b)("img",{src:t,alt:"icon"}),Object(c.b)("h3",null,a),Object(c.b)("p",null,i))},Y=a(8),J=a.n(Y),U=a(9),q=a.n(U),R=a(10),K=a.n(R),Q=a(11),V=a.n(Q);const X=[{cardImg:J.a,cardTitle:"Build strength",cardDescription:"The strength you build in the gym will begin to reflect in everyday life!"},{cardImg:q.a,cardTitle:"Build discipline",cardDescription:"Discipline is the bridge between goals and accomplishment."},{cardImg:K.a,cardTitle:"Build confidence",cardDescription:"Confidence comes not from always being right but from not fearing to be wrong."},{cardImg:V.a,cardTitle:"Build a new you",cardDescription:"You'll be amazed at how much transformation 1 year can bring! All it takes is that first step!"}],Z=c.a`
   width: 100%;
   padding: 170px 0;
   background: #000;
@@ -312,7 +312,7 @@
       max-width: 640px;
     }
   }
-`;var _=()=>Object(c.b)("section",{css:Z,className:"features",id:"about"},Object(c.b)(G,{title:"With me, you will..."}),Object(c.b)(p,null,X.map((e,t)=>Object(c.b)(L,{key:t,cardImg:e.cardImg,cardTitle:e.cardTitle,cardDescription:e.cardDescription}))));const ee=c.a`
+`;var _=()=>Object(c.b)("section",{css:Z,className:"features",id:"about"},Object(c.b)(L,{title:"With me, you will..."}),Object(c.b)(p,null,X.map((e,t)=>Object(c.b)(H,{key:t,cardImg:e.cardImg,cardTitle:e.cardTitle,cardDescription:e.cardDescription}))));c.a`
   width: 100%;
   max-width: 560px;
   color: #fff;
@@ -347,10 +347,10 @@
       }
     }
   }
-`;var te=()=>Object(c.b)("div",{css:ee,className:"info"},Object(c.b)("h3",null,"A BIG OFFER FOR ",Object(c.b)("br",null)," THIS SUMMER"),Object(c.b)("h2",null,"50% Off"),Object(c.b)("p",null,"There are many variations of passages of lorem Ipsum available, ",Object(c.b)("br",null)," but the majority have suffered alteration."),Object(c.b)(u,{text:"JOIN NOW"})),ae=a(12),ie=a.n(ae);const ne=c.a`
+`;var ee=a(12),te=a.n(ee);c.a`
   width: 100%;
   padding: 200px 0;
-  background: url('${ie.a}') no-repeat center/cover;
+  background: url('${te.a}') no-repeat center/cover;
   .container {
     display: flex;
     justify-content: flex-end;
@@ -361,7 +361,7 @@
       max-width: 90%;
     }
   }
-`;var oe=()=>Object(c.b)("section",{css:ne,className:"bigOffer"},Object(c.b)(p,null,Object(c.b)(te,null)));c.a`
+`;c.a`
   padding-bottom: 30px;
   border-bottom: 1px solid #313131;
   h3 {
@@ -500,7 +500,7 @@
       }
     }
   }
-`;var re=a(19),ce=a.n(re);const le=c.a`
+`;var ae=a(19),ie=a.n(ae);const ne=c.a`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -525,7 +525,7 @@
       margin: auto;
     }
   }
-`;var se=()=>Object(c.b)("div",{css:le,className:"socialIcons"},Object(c.b)("div",{className:"icon"},Object(c.b)("i",{className:"fab fa-facebook-f"})),Object(c.b)("div",{className:"icon"},Object(c.b)("i",{className:"fab fa-twitter"})),Object(c.b)("div",{className:"icon"},Object(c.b)("i",{className:"fab fa-instagram"})));const de=c.a`
+`;var oe=()=>Object(c.b)("div",{css:ne,className:"socialIcons"},Object(c.b)("div",{className:"icon"},Object(c.b)("i",{className:"fab fa-facebook-f"})),Object(c.b)("div",{className:"icon"},Object(c.b)("i",{className:"fab fa-twitter"})),Object(c.b)("div",{className:"icon"},Object(c.b)("i",{className:"fab fa-instagram"})));const re=c.a`
   position: absolute;
   right: 0;
   bottom: 0;
@@ -533,7 +533,7 @@
   background: rgba(0, 0, 0, 0.5);
   opacity: 0;
   height: 90%;
-`;var pe=()=>Object(c.b)("div",{css:de,className:"cardOverlay"},Object(c.b)(se,null));const me=c.a`
+`;var ce=()=>Object(c.b)("div",{css:re,className:"cardOverlay"},Object(c.b)(oe,null));const le=c.a`
   color: #fff;
   &:hover {
     .cardOverlay {
@@ -579,12 +579,12 @@
       }
     }
   }
-`;var be=e=>{let{trainerName:t,trainerGender:a,trainerImg:i}=e;return Object(c.b)("div",{css:me,className:"trainerCard"},Object(c.b)("div",{className:"trainerImg"},Object(c.b)(pe,null),Object(c.b)("img",{src:i,alt:"trainer",height:"450"})),Object(c.b)("h2",null,t),Object(c.b)("p",null,a))},he=a(20),xe=a.n(he);const fe=c.a`
+`;var de=e=>{let{trainerName:t,trainerGender:a,trainerImg:i}=e;return Object(c.b)("div",{css:le,className:"trainerCard"},Object(c.b)("div",{className:"trainerImg"},Object(c.b)(ce,null),Object(c.b)("img",{src:i,alt:"trainer",height:"450"})),Object(c.b)("h2",null,t),Object(c.b)("p",null,a))},se=a(20),pe=a.n(se);const me=c.a`
   width: 100%;
   padding: 160px 0;
   text-align: center;
   position: relative;
-  background: url('${ce.a}') no-repeat center/cover;
+  background: url('${ie.a}') no-repeat center/cover;
   .title{
     position: relative;
     z-index: 5;
@@ -614,11 +614,11 @@
         flex-wrap: wrap;
       }
   }
-`;var ge=()=>Object(c.b)("section",{css:fe,className:"trainers",id:"pages"},Object(c.b)(E,null),Object(c.b)(p,null,Object(c.b)(G,{title:"About Me",desc:"A small hand full of years ago, I was in a place where a number of you may be in right now. I had found myself points away from being pre-diabetic and was nearly 200Lb at my heaviest. Barely into my mid-twenties, I knew I had to make a change. I had my whole life ahead of me! One day I stepped into the gym, no idea where to begin and quickly fell in love. My metamorphosis began in 2021. Shortly after, I knew with every fiber of my being I was meant to help others with their own! Let's get to work!"}),Object(c.b)(be,{trainerName:"Haylea Brown",trainerGender:"Personal trainer",trainerImg:xe.a}))),ue=a(21),we=a.n(ue);c.a`
+`;var be=()=>Object(c.b)("section",{css:me,className:"trainers",id:"pages"},Object(c.b)(T,null),Object(c.b)(p,null,Object(c.b)(L,{title:"About Me",desc:"A small hand full of years ago, I was in a place where a number of you may be in right now. I had found myself points away from being pre-diabetic and was nearly 200Lb at my heaviest. Barely into my mid-twenties, I knew I had to make a change. I had my whole life ahead of me! One day I stepped into the gym, no idea where to begin and quickly fell in love. My metamorphosis began in 2021. Shortly after, I knew with every fiber of my being I was meant to help others with their own! Let's get to work!"}),Object(c.b)(de,{trainerName:"Haylea Brown",trainerGender:"Personal trainer",trainerImg:pe.a}))),he=a(21),xe=a.n(he);c.a`
   width: 100%;
   padding: 240px 0;
   text-align: center;
-  background: url('${we.a}') no-repeat center/cover;
+  background: url('${xe.a}') no-repeat center/cover;
   color: #fff;
   h2{
     font-size: 50px;
@@ -632,7 +632,7 @@
       border: 1px solid #ff1414;
     }
   }
-`;const ye=c.a`
+`;const fe=c.a`
   width: 100%;
   max-width: 1140px;
   margin: 0 auto;
@@ -751,7 +751,7 @@
   @media (max-width: 1200px) {
     max-width: 90%;
   }
-`;var je=()=>Object(c.b)("div",{className:"wrap",css:ye},Object(c.b)("div",{className:"footerCard"},Object(c.b)("h2",null,"Personal training by Halyea"),Object(c.b)("p",null,"Text or call: ",Object(c.b)("a",{href:"#/"},"(214) 407-4724")),Object(c.b)("a",{href:"#/"},"getfitwithhaylea@gmail.com"),Object(c.b)("div",{className:"footerSocials"},Object(c.b)("a",{href:"https://www.instagram.com/haylea.brown/"},"Find me on Instagram"))),Object(c.b)("div",{className:"footerCard"},Object(c.b)("h2",null,"Useful Links"),Object(c.b)("a",{href:"#/"},"About"),Object(c.b)("a",{href:"#/"},"Gallery"),Object(c.b)("a",{href:"#/"},"Contact")),Object(c.b)("div",{className:"footerCard"},Object(c.b)("h2",null,"Subscribe"),Object(c.b)("div",{className:"inputWrap"},Object(c.b)("input",{type:"email",placeholder:"Enter your mail"}),Object(c.b)(u,{text:"Subscribe"}))));const ve=c.a`
+`;var ge=()=>Object(c.b)("div",{className:"wrap",css:fe},Object(c.b)("div",{className:"footerCard"},Object(c.b)("h2",null,"Personal training by Halyea"),Object(c.b)("p",null,"Text or call: ",Object(c.b)("a",{href:"#/"},"(214) 407-4724")),Object(c.b)("a",{href:"#/"},"getfitwithhaylea@gmail.com"),Object(c.b)("div",{className:"footerSocials"},Object(c.b)("a",{href:"https://www.instagram.com/haylea.brown/"},"Find me on Instagram"))),Object(c.b)("div",{className:"footerCard"},Object(c.b)("h2",null,"Useful Links"),Object(c.b)("a",{href:"#/"},"About"),Object(c.b)("a",{href:"#/"},"Gallery"),Object(c.b)("a",{href:"#/"},"Contact")),Object(c.b)("div",{className:"footerCard"},Object(c.b)("h2",null,"Subscribe"),Object(c.b)("div",{className:"inputWrap"},Object(c.b)("input",{type:"email",placeholder:"Enter your mail"}),Object(c.b)(u,{text:"Subscribe"}))));const ue=c.a`
   background: #000;
   .container {
     padding: 30px 0;
@@ -771,5 +771,5 @@
       max-width: 90%;
     }
   }
-`;var Oe=()=>Object(c.b)("footer",{css:ve,id:"contact"},Object(c.b)(je,null),Object(c.b)(p,null,Object(c.b)("p",null,"Copyright 2025, All rights reserved to Halyea Brown"))),ke=a(22),ze=a.n(ke),Ne=a(23),Ie=a.n(Ne),Ee=a(24),Te=a.n(Ee);const Ce=[ze.a,Ie.a,Te.a];var Be=()=>{const[e,t]=Object(i.useState)(0);return Object(i.useEffect)(()=>{const e=setInterval(()=>{t(e=>(e+1)%Ce.length)},3e3);return()=>clearInterval(e)},[]),n.a.createElement("div",{className:"slideshow-container",style:{textAlign:"center"}},n.a.createElement("img",{src:Ce[e],alt:"slide-"+e,style:{width:"100%",maxWidth:"600px",borderRadius:"1rem"}}),n.a.createElement("div",{style:{marginTop:"1rem"}},Ce.map((a,i)=>n.a.createElement("span",{key:i,style:{height:"12px",width:"12px",margin:"0 4px",background:i===e?"#333":"#bbb",borderRadius:"50%",display:"inline-block",cursor:"pointer"},onClick:()=>t(i)}))))};var Me=()=>n.a.createElement("div",{className:"App"},n.a.createElement(N,null),n.a.createElement($,null),n.a.createElement(_,null),n.a.createElement(oe,null),n.a.createElement(Be,null),n.a.createElement(ge,null),n.a.createElement(Oe,null));Boolean("localhost"===window.location.hostname||"[::1]"===window.location.hostname||window.location.hostname.match(/^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/));r.a.render(n.a.createElement(n.a.StrictMode,null,n.a.createElement(Me,null)),document.getElementById("root")),"serviceWorker"in navigator&&navigator.serviceWorker.ready.then(e=>{e.unregister()}).catch(e=>{console.error(e.message)})}],[[25,1,2]]]);
-//# sourceMappingURL=main.15b8293e.chunk.js.map
+`;var we=()=>Object(c.b)("footer",{css:ue,id:"contact"},Object(c.b)(ge,null),Object(c.b)(p,null,Object(c.b)("p",null,"Copyright 2025, All rights reserved to Halyea Brown"))),ye=a(22),ve=a.n(ye),je=a(23),Oe=a.n(je),ke=a(24),ze=a.n(ke);ve.a,Oe.a,ze.a;var Ne=()=>n.a.createElement("div",{className:"App"},n.a.createElement(N,null),n.a.createElement(F,null),n.a.createElement(_,null),n.a.createElement(be,null),n.a.createElement(we,null));Boolean("localhost"===window.location.hostname||"[::1]"===window.location.hostname||window.location.hostname.match(/^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/));r.a.render(n.a.createElement(n.a.StrictMode,null,n.a.createElement(Ne,null)),document.getElementById("root")),"serviceWorker"in navigator&&navigator.serviceWorker.ready.then(e=>{e.unregister()}).catch(e=>{console.error(e.message)})}],[[25,1,2]]]);
+//# sourceMappingURL=main.3323d05a.chunk.js.map
