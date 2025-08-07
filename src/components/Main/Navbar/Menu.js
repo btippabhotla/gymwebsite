@@ -5,7 +5,7 @@ const Menu = ({ openMenu }) => (
   <div css={styles} className={openMenu ? "menu" : "hidden"}>
     <a href="#home">home</a>
     <a href="#about">about</a>
-    <a href="#pricing">pricing</a>
+    {/* <a href="#pricing">pricing</a> */}
     <a href="#gallery">gallery</a>
     <a href="#pages">pages</a>
     <a href="#blog">blog</a>

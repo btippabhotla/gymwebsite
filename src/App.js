@@ -9,6 +9,7 @@ import Gallery from "./components/Gallery/Gallery";
 import Trainers from "./components/Trainers/Trainers";
 import BannerOffer from "./components/BannerOffer/BannerOffer";
 import Footer from "./components/Footer/Footer";
+import Slideshow from "./components/Slideshow/Slideshow";
 
 const App = () => {
   return (
@@ -17,10 +18,11 @@ const App = () => {
       <JoinUs />
       <Features />
       <BigOffer />
-      <Pricing />
-      <Gallery />
+      {/* <Pricing /> */}
+      <Slideshow />
+      {/* <Gallery /> */}
       <Trainers />
-      <BannerOffer />
+      {/* <BannerOffer /> */}
       <Footer />
     </div>
   );
