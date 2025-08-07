@@ -1,5 +1,4 @@
 /** @jsx jsx */
-/** @jsxImportSource @emotion/react */
 import { jsx, css } from "@emotion/core";
 import Container from "../GlobalComponents/Container";
 import Title from "../GlobalComponents/Title";

@@ -1,5 +1,4 @@
 /** @jsx jsx */
-/** @jsxImportSource @emotion/react */
 import { jsx, css } from "@emotion/core";
 
 const FeaturesCard = ({ cardImg, cardTitle, cardDescription }) => (
