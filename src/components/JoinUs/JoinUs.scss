@@ -1,0 +1,59 @@
+//@import "../Images/forGirl.jpg";
+//@import "../Images/healthyMeals.jpg";
+//@import "../Images/forGirl.png";
+
+.joinUs {
+  width: 100%;
+  background: #000;
+
+  .container {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .card {
+      background: url('../Images/forGirl.jpg') no-repeat center center;
+      background-size: cover;
+      transition: background-size 0.3s ease;
+      width: 48%;
+      min-width: 320px;
+      max-width: 500px;
+      margin: 16px;
+
+      &:hover {
+        background-size: 105% 105%;
+      }
+
+      &:last-of-type {
+        background: url('../Images/healthyMeals.jpg') no-repeat center center;
+        background-size: cover;
+
+        &:hover {
+          background-size: 105% 105%;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .card {
+      width: 90%;
+      max-width: 100%;
+      min-width: 0;
+      margin: 16px 0;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .card {
+      width: 100%;
+      padding: 60px 0;
+      font-size: 1rem;
+    }
+  }
+}

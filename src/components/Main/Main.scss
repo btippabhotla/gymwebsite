@@ -1,0 +1,33 @@
+.main {
+  width: 100%;
+  min-height: 96vh;
+  background: url('../Images/mainBackground.jpg') no-repeat center/cover;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  .container {
+    margin: auto;
+    text-align: center;
+    z-index: 2;
+    color: #fff;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+  }
+
+  @media (max-width: 965px) {
+    .container {
+      max-width: 90%;
+      padding: 0 10px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    min-height: 80vh;
+    .container {
+      max-width: 95%;
+      padding: 0 5px;
+    }
+  }
+}

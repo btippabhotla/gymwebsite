@@ -1,4 +1,3 @@
-/** @jsx jsx */
 import { jsx, css } from "@emotion/core";
 import Button from "../GlobalComponents/Button";
 

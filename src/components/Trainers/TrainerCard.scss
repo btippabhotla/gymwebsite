@@ -1,0 +1,63 @@
+.trainerCard {
+  background: #222; // Gray background
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto 40px auto;
+  border-radius: 1rem;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+
+  .trainerImg {
+    position: relative;
+    img {
+      width: 100%;
+      max-width: 350px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      // -webkit-filter: grayscale(100%);
+      // filter: grayscale(100%);
+      border-radius: 1rem;
+    }
+  }
+
+  h2 {
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 1;
+    margin: 14px 0 0 0;
+  }
+
+  p {
+    font-size: 16px;
+    margin: 16px 0 0 0;
+  }
+
+  @media (max-width: 769px) {
+    max-width: 100%;
+    .trainerImg img {
+      max-width: 100%;
+    }
+    h2 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .trainerImg img {
+      // max-width: 100%;
+      // border-radius: 0.5rem;
+      display: none; // Hide image on very small screens;
+    }
+    h2 {
+      display: none; // Hide name on very small screens;
+    }
+    p {
+      display: none; // Hide role on very small screens;
+    }
+  }
+}

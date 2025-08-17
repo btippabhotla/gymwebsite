@@ -1,27 +1,13 @@
-/** @jsx jsx */
-import { jsx, css } from "@emotion/core";
+import React from "react";
 import ImgOverlay from "../GlobalComponents/ImgOverlay";
 import JoinUsInfo from "./JoinUsInfo";
+import "./JoinUsCard.scss";
 
 const JoinUsCard = ({ title, description }) => (
-  <div css={styles} className="card">
+  <div className="card">
     <ImgOverlay />
     <JoinUsInfo title={title} description={description}/>
   </div>
 );
-
-const styles = css`
-  width: 100%;
-  max-width: 50%;
-  padding: 200px 0;
-  position: relative;
-  background-size: 100% 100%;
-  &:hover {
-    background-size: 105% 105%;
-  }
-  @media(max-width: 1000px) {
-    max-width: 100%;
-  }
-`;
 
 export default JoinUsCard;

@@ -1,4 +1,3 @@
-/** @jsx jsx */
 import { jsx, css } from "@emotion/core";
 import Container from "../GlobalComponents/Container";
 import BigOfferInfo from "./BigOfferInfo";

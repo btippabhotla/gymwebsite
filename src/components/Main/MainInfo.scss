@@ -1,0 +1,53 @@
+.mainInfo {
+  h2 {
+    font-size: 6rem;
+    font-weight: 800;
+    line-height: 1;
+    text-transform: uppercase;
+    margin: 0 0 24px 0;
+  }
+  h1 {
+    font-size: 150px;
+    font-weight: 900;
+    line-height: 1;
+    margin: 24px 0;
+    text-transform: uppercase;
+  }
+  p {
+    font-size: 2rem;
+    margin-bottom: 24px;
+  }
+  .btn {
+    margin: 32px 0 0 0;
+    padding: 15px 50px;
+    &:hover {
+      background: transparent;
+      color: #ff1414;
+      border: 1px solid #ff1414;
+    }
+  }
+  @media (max-width: 965px) {
+    h2 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+  }
+  @media (max-width: 640px) {
+    h1 {
+      font-size: 40px;
+    }
+    h2 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+  @media (min-width: 641px) and (max-width: 965px) {
+    h1 {
+      font-size: 60px;
+    }
+}
+}

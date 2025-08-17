@@ -10,6 +10,7 @@ import Trainers from "./components/Trainers/Trainers";
 import BannerOffer from "./components/BannerOffer/BannerOffer";
 import Footer from "./components/Footer/Footer";
 import Slideshow from "./components/Slideshow/Slideshow";
+import Reviews from "./components/GoogleReviews/GoogleReviews";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
       {/* <Gallery /> */}
       <Trainers />
       {/* <BannerOffer /> */}
+      {/* <Reviews /> */}
       <Footer />
     </div>
   );

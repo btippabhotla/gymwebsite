@@ -1,4 +1,3 @@
-/** @jsx jsx */
 import { jsx, css } from "@emotion/core";
 import Title from "../GlobalComponents/Title";
 import Container from "../GlobalComponents/Container";

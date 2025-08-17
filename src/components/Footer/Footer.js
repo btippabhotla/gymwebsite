@@ -1,39 +1,17 @@
-/** @jsx jsx */
-import { jsx, css } from "@emotion/core";
+import React from "react";
 import FooterCardContainer from "./FooterCardContainer";
 import Container from "../GlobalComponents/Container";
+import "./Footer.scss";
 
 const Footer = () => (
-  <footer css={styles} id="contact">
+  <footer id="contact" className="footer">
     <FooterCardContainer />
     <Container>
-      <p>
-        Copyright 2025, All rights reserved to Halyea Brown
-        </p>
+      <p className="footer-text">
+        &copy; {new Date().getFullYear()}, All rights reserved to Halyea Brown.
+      </p>
     </Container>
   </footer>
 );
-
-const styles = css`
-  background: #000;
-  .container {
-    padding: 30px 0;
-    border-top: 1px solid #1a1a1a;
-    text-align: center;
-    p {
-      font-size: 15px;
-      color: #aab1b7;
-      a {
-        text-decoration: none;
-        color: #ff1414;
-      }
-    }
-  }
-  @media (max-width: 1200px) {
-    .container {
-      max-width: 90%;
-    }
-  }
-`;
 
 export default Footer;

@@ -1,4 +1,3 @@
-/** @jsx jsx */
 import { jsx, css } from "@emotion/core";
 import Overlay from "../GlobalComponents/Overlay";
 

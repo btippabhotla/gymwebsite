@@ -1,5 +1,4 @@
-/** @jsx jsx */
-import { jsx, css } from "@emotion/core";
+import React from "react";
 import Container from "../GlobalComponents/Container";
 import Title from "../GlobalComponents/Title";
 import FeaturesCard from "./FeaturesCard";
@@ -7,6 +6,7 @@ import IconOne from "../Images/iconOne.svg";
 import IconTwo from "../Images/iconTwo.svg";
 import IconThree from "../Images/iconThree.svg";
 import IconFour from "../Images/iconFour.svg";
+import "./Features.scss";
 
 const cardsData = [
   { cardImg: IconOne, cardTitle: "Build strength", cardDescription: "The strength you build in the gym will begin to reflect in everyday life!" },
@@ -16,7 +16,7 @@ const cardsData = [
 ];
 
 const Features = () => (
-  <section css={styles} className="features" id="about">
+  <section className="features" id="about">
     <Title
       title="With me, you will..."
       // desc="There are many variations of passages of lorem Ipsum available, but the majority
@@ -29,34 +29,5 @@ const Features = () => (
     </Container>
   </section>
 );
-
-const styles = css`
-  width: 100%;
-  padding: 170px 0;
-  background: #000;
-  .container {
-    display: flex;
-    padding: 80px 0 0 0;
-  }
-  @media (max-width: 579px) {
-    .title {
-      padding: 0 40px;
-    }
-    .container {
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-  @media (min-width: 580px) and (max-width: 1000px) {
-    .title {
-      padding: 0 40px;
-    }
-    .container {
-      flex-wrap: wrap;
-      justify-content: space-between;
-      max-width: 640px;
-    }
-  }
-`;
 
 export default Features;

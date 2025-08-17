@@ -1,4 +1,3 @@
-/** @jsx jsx */
 import { jsx, css } from "@emotion/core";
 import PricingTitle from "./PricingTitle";
 import PricingInfo from "./PricingInfo";
